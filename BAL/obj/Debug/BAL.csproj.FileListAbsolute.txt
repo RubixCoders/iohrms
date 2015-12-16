@@ -1,0 +1,26 @@
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\BAL.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\BAL.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\Common.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\DAL.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\EntityFramework.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\Common.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\DAL.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\bin\Debug\EntityFramework.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\obj\Debug\BAL.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\BAL\obj\Debug\BAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\BAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\BAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\Common.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\DAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\EntityFramework.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\Common.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\DAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\EntityFramework.xml
+E:\Projects\Work Projects\HRMS\HRMS\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+E:\Projects\Work Projects\HRMS\HRMS\BAL\obj\Debug\BAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\obj\Debug\BAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\BusinessEntities.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\BusinessEntities.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\log4net.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\log4net.xml

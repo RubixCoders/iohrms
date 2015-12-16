@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbHRMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblAllotedLeaf">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpId" Type="Int32" />
+    <Property Name="CL" Type="Int32" />
+    <Property Name="PL" Type="Int32" />
+    <Property Name="CompOff" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsPermanent" Type="Boolean" Nullable="false" />
+    <Property Name="Salary" Type="Double" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="EmpImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblLeaveDetail">
+    <Key>
+      <PropertyRef Name="LeaveId" />
+    </Key>
+    <Property Name="LeaveId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpId" Type="Int32" Nullable="false" />
+    <Property Name="FromDate" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="ToDate" Type="DateTime" Precision="0" />
+    <Property Name="LeaveType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LeaveReason" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="dbHRMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblAllotedLeaves" EntityType="Self.tblAllotedLeaf" />
+    <EntitySet Name="tblEmployees" EntityType="Self.tblEmployee" />
+    <EntitySet Name="tblLeaveDetails" EntityType="Self.tblLeaveDetail" />
+    <EntitySet Name="C__MigrationHistory" EntityType="dbHRMSModel.C__MigrationHistory" />
+    <EntitySet Name="AspNetRoles" EntityType="dbHRMSModel.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="dbHRMSModel.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="dbHRMSModel.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="dbHRMSModel.AspNetUser" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="dbHRMSModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaim" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="dbHRMSModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogin" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="dbHRMSModel.AspNetUserRoles">
+      <End Role="AspNetRole" EntitySet="AspNetRoles" />
+      <End Role="AspNetUser" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <FunctionImport Name="sp_AllotedLeaves" ReturnType="Collection(dbHRMSModel.sp_AllotedLeaves_Result)">
+      <Parameter Name="Action" Mode="In" Type="String" />
+      <Parameter Name="Id" Mode="In" Type="Int32" />
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+      <Parameter Name="CL" Mode="In" Type="Int32" />
+      <Parameter Name="PL" Mode="In" Type="Int32" />
+      <Parameter Name="CompOff" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Employee" ReturnType="Collection(dbHRMSModel.sp_Employee_Result)">
+      <Parameter Name="Action" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_LeaveDetails" ReturnType="Collection(dbHRMSModel.sp_LeaveDetails_Result)">
+      <Parameter Name="Action" Mode="In" Type="String" />
+      <Parameter Name="LeaveId" Mode="In" Type="Int32" />
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="LeaveType" Mode="In" Type="String" />
+      <Parameter Name="LeaveReason" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddEmployee">
+      <Parameter Name="UserId" Mode="In" Type="String" />
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="IsPermanent" Mode="In" Type="Boolean" />
+      <Parameter Name="Salary" Mode="In" Type="Double" />
+      <Parameter Name="EmpImage" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_EditEmployeeDetails">
+      <Parameter Name="EmpID" Mode="In" Type="Int32" />
+      <Parameter Name="EmpCode" Mode="In" Type="String" />
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="LastName" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="IsPermanent" Mode="In" Type="Boolean" />
+      <Parameter Name="Salary" Mode="In" Type="Double" />
+      <Parameter Name="EmpImage" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetEmployeeList" ReturnType="Collection(dbHRMSModel.sp_GetEmployeeList_Result)" />
+    <FunctionImport Name="sp_SelectAndDeleteEmployee" ReturnType="Collection(dbHRMSModel.sp_SelectAndDeleteEmployee_Result)">
+      <Parameter Name="Action" Mode="In" Type="String" />
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DeleteEmployeeById">
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetEmployeeById" ReturnType="Collection(dbHRMSModel.sp_GetEmployeeById_Result)">
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_AddLeave">
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="LeaveType" Mode="In" Type="String" />
+      <Parameter Name="LeaveReason" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_DeleteLeaveDetails">
+      <Parameter Name="LeaveId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetLeaveDetailsByLeaveId" ReturnType="Collection(dbHRMSModel.sp_GetLeaveDetailsByLeaveId_Result)">
+      <Parameter Name="LeaveId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetLeaveListByEmpId" ReturnType="Collection(dbHRMSModel.sp_GetLeaveListByEmpId_Result)">
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_UpdateLeaveDetails">
+      <Parameter Name="LeaveId" Mode="In" Type="Int32" />
+      <Parameter Name="EmpId" Mode="In" Type="Int32" />
+      <Parameter Name="FromDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ToDate" Mode="In" Type="DateTime" />
+      <Parameter Name="LeaveType" Mode="In" Type="String" />
+      <Parameter Name="LeaveReason" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="dbHRMSModel.AspNetUserRoles" FromRole="AspNetRole" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="dbHRMSModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaim" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="dbHRMSModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogin" ToRole="AspNetUser" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="dbHRMSModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserClaim" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="dbHRMSModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUser" ToRole="AspNetUserLogin" />
+    <NavigationProperty Name="AspNetRoles" Relationship="dbHRMSModel.AspNetUserRoles" FromRole="AspNetUser" ToRole="AspNetRole" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="dbHRMSModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="dbHRMSModel.AspNetUserClaim" Role="AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="dbHRMSModel.AspNetUser" Role="AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="dbHRMSModel.AspNetUserLogin" Role="AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogin">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="dbHRMSModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
+    <End Type="dbHRMSModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="sp_AllotedLeaves_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="EmpId" Nullable="true" />
+    <Property Type="Int32" Name="CL" Nullable="true" />
+    <Property Type="Int32" Name="PL" Nullable="true" />
+    <Property Type="Int32" Name="CompOff" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_Employee_Result">
+    <Property Type="String" Name="UserId" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="EmpId" Nullable="false" />
+    <Property Type="String" Name="EmpCode" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsPermanent" Nullable="false" />
+    <Property Type="Double" Name="Salary" Nullable="true" />
+    <Property Type="String" Name="EmpImage" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_LeaveDetails_Result">
+    <Property Type="Int32" Name="LeaveId" Nullable="false" />
+    <Property Type="Int32" Name="EmpId" Nullable="true" />
+    <Property Type="DateTime" Name="FromDate" Nullable="true" />
+    <Property Type="DateTime" Name="ToDate" Nullable="true" />
+    <Property Type="String" Name="LeaveType" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="LeaveReason" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_GetEmployeeList_Result">
+    <Property Type="String" Name="UserId" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="EmpId" Nullable="false" />
+    <Property Type="String" Name="EmpCode" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsPermanent" Nullable="false" />
+    <Property Type="Double" Name="Salary" Nullable="true" />
+    <Property Type="String" Name="EmpImage" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_SelectAndDeleteEmployee_Result">
+    <Property Type="String" Name="UserId" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="EmpId" Nullable="false" />
+    <Property Type="String" Name="EmpCode" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsPermanent" Nullable="false" />
+    <Property Type="Double" Name="Salary" Nullable="true" />
+    <Property Type="String" Name="EmpImage" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_GetEmployeeById_Result">
+    <Property Type="String" Name="UserId" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="EmpId" Nullable="false" />
+    <Property Type="String" Name="EmpCode" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Designation" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsPermanent" Nullable="false" />
+    <Property Type="Double" Name="Salary" Nullable="true" />
+    <Property Type="String" Name="EmpImage" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_GetLeaveDetailsByLeaveId_Result">
+    <Property Type="Int32" Name="LeaveId" Nullable="false" />
+    <Property Type="Int32" Name="EmpId" Nullable="true" />
+    <Property Type="DateTime" Name="FromDate" Nullable="true" />
+    <Property Type="DateTime" Name="ToDate" Nullable="true" />
+    <Property Type="String" Name="LeaveType" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="LeaveReason" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_GetLeaveListByEmpId_Result">
+    <Property Type="Int32" Name="LeaveId" Nullable="false" />
+    <Property Type="Int32" Name="EmpId" Nullable="true" />
+    <Property Type="DateTime" Name="FromDate" Nullable="true" />
+    <Property Type="DateTime" Name="ToDate" Nullable="true" />
+    <Property Type="String" Name="LeaveType" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="LeaveReason" Nullable="true" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,124 @@
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\HRMS.dll.config
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\HRMS.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\HRMS.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Antlr3.Runtime.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\BAL.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Common.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\EntityFramework.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\EntityFramework.SqlServer.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Newtonsoft.Json.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Owin.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Helpers.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Mvc.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Optimization.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Razor.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.WebPages.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\WebGrease.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\BAL.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Common.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Helpers.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Mvc.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Optimization.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.Razor.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.WebPages.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Antlr3.Runtime.pdb
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Newtonsoft.Json.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\EntityFramework.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\EntityFramework.SqlServer.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\obj\Debug\HRMS.csprojResolveAssemblyReference.cache
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\obj\Debug\HRMS.dll
+C:\Users\Mayank\Documents\Visual Studio 2013\Projects\HRMS\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\HRMS.dll.config
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\HRMS.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\HRMS.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Antlr3.Runtime.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\BAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Common.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\EntityFramework.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\EntityFramework.SqlServer.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Google.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Newtonsoft.Json.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Owin.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Helpers.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Mvc.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Optimization.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Razor.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.WebPages.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.WebPages.Razor.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\WebGrease.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\BAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Common.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Helpers.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Mvc.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Optimization.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.Razor.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.WebPages.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\System.Web.WebPages.Razor.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Antlr3.Runtime.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Newtonsoft.Json.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\EntityFramework.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\EntityFramework.SqlServer.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Google.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\obj\Debug\HRMS.csprojResolveAssemblyReference.cache
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\BusinessEntities.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\DAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\BusinessEntities.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\DAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\log4net.dll
+E:\Projects\Work Projects\HRMS\HRMS\HRMS\bin\log4net.xml

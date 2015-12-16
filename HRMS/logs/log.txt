@@ -1,0 +1,21 @@
+ERROR 2015-12-16 02:07:41,545  5329ms LogManager             GetLeaveList       - LeaveDAL:- GetLeaveList
+System.InvalidOperationException: The result of a query cannot be enumerated more than once.
+   at System.Data.Entity.Core.Objects.ObjectResult`1.EnsureCanEnumerateResults()
+   at System.Data.Entity.Core.Objects.ObjectResult`1.GetDbEnumerator()
+   at System.Data.Entity.Core.Objects.ObjectResult`1.GetEnumerator()
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 23
+ERROR 2015-12-16 02:07:41,640  5424ms LogManager             GetLeaveList       - LeaveBAL:- GetLeaveList
+System.InvalidOperationException: The result of a query cannot be enumerated more than once.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 39
+   at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 20
+ERROR 2015-12-16 02:10:17,348 61007ms LogManager             GetLeaveList       - LeaveDAL:- GetLeaveList
+System.InvalidOperationException: The result of a query cannot be enumerated more than once.
+   at System.Data.Entity.Core.Objects.ObjectResult`1.EnsureCanEnumerateResults()
+   at System.Data.Entity.Core.Objects.ObjectResult`1.GetDbEnumerator()
+   at System.Data.Entity.Core.Objects.ObjectResult`1.GetEnumerator()
+   at System.Linq.Enumerable.Count[TSource](IEnumerable`1 source)
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 24
+ERROR 2015-12-16 02:10:17,381 61041ms LogManager             GetLeaveList       - LeaveBAL:- GetLeaveList
+System.InvalidOperationException: The result of a query cannot be enumerated more than once.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 43
+   at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 20

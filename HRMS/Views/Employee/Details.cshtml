@@ -1,0 +1,93 @@
+﻿@model BusinessEntities.EmployeeBE
+
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Employee Profile</h2>
+
+<div>
+    @*<h4>EmployeeBE</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model=>model.EmpId)
+        @Html.HiddenFor(model=>model.UserId)
+        @*<dt>
+            @Html.DisplayNameFor(model => model.EmpId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsPermanent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsPermanent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpImage)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { empId = Model.EmpId, userId = Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

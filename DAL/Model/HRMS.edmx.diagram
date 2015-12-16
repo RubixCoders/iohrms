@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c688652c92984e6990980845c5182308" Name="Diagram1">
+        <EntityTypeShape EntityType="dbHRMSModel.tblAllotedLeaf" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbHRMSModel.tblEmployee" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbHRMSModel.tblLeaveDetail" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbHRMSModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbHRMSModel.AspNetRole" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="dbHRMSModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="5" />
+        <EntityTypeShape EntityType="dbHRMSModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="7.75" />
+        <EntityTypeShape EntityType="dbHRMSModel.AspNetUser" Width="1.5" PointX="3" PointY="5.375" />
+        <AssociationConnector Association="dbHRMSModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="dbHRMSModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="dbHRMSModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
