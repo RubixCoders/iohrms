@@ -1,0 +1,67 @@
+﻿@model BusinessEntities.LeaveBE
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LeaveBE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LeaveId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeaveId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FromDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeaveType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeaveType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeaveReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeaveReason)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

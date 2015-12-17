@@ -36,5 +36,46 @@ namespace HRMS.Controllers
             else
                 return View(leave);
         }
+
+        public ActionResult Details(int leaveId)
+        {
+            LeaveBE leave = manager.GetLeaveDetails(leaveId);
+            return View(leave);
+        }
+
+        //GET: Leave
+        public ActionResult Edit(int leaveId)
+        {
+            LeaveBE leave = manager.GetLeaveDetails(leaveId);
+            return View(leave);
+        }
+
+        //POST: Leave
+        [HttpPost]
+        public ActionResult Edit(LeaveBE leave)
+        {
+            bool boolStatus = manager.UpdateLeaveDetails(leave);
+            if (boolStatus)
+                return RedirectToAction("Index");
+            else
+                return View(leave);
+        }
+
+        //GET: Leave
+        public ActionResult Delete(int leaveId)
+        {
+            LeaveBE leave = manager.GetLeaveDetails(leaveId);
+            return View(leave);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(LeaveBE leave)
+        {
+            bool boolStatus = manager.DeleteLeave(leave.LeaveId);
+            if (boolStatus)
+                return RedirectToAction("Index");
+            else
+                return RedirectToAction("Delete", new { id = leave.LeaveId });
+        }
     }
 }

@@ -51,5 +51,62 @@ namespace BAL
                 throw ex;
             }
         }
+
+        /// Created By:- Surbhi Harsh
+        /// Created On:- 16-12-2015
+        /// <summary>
+        /// This Method is used to get the details of a leave.
+        /// </summary>
+        /// <param name="leaveId"></param>
+        /// <returns>Leave</returns>
+        public LeaveBE GetLeaveDetails(int leaveId) {
+            try
+            {
+                return dal.GetLeaveDetails(leaveId);
+            }
+            catch (Exception ex)
+            {
+                LogManager.logger.Error("LeaveBAL:- GetLeaveDetails", ex);
+                throw ex;
+            }
+        }
+
+        /// Created By:- Surbhi Harsh
+        /// Created On:- 17-12-2015
+        /// <summary>
+        /// This Method is used to update the details of an Employee
+        /// </summary>
+        /// <param name="leave"></param>
+        /// <returns>boolStatus</returns>
+        public bool UpdateLeaveDetails(LeaveBE leave) {
+            try
+            {
+                return dal.UpdateLeaveDetails(leave);
+            }
+            catch (Exception ex)
+            {
+                LogManager.logger.Error("LeaveBAL:- UpdateLeaveDetails", ex);
+                throw ex;
+            }
+        }
+
+        /// Created By:- Surbhi Harsh
+        /// Created On:- 17-12-2015
+        /// <summary>
+        /// This Method is used to delete a leave from records.
+        /// </summary>
+        /// <param name="leaveId"></param>
+        /// <returns></returns>
+        public bool DeleteLeave(int leaveId) {
+            try
+            {
+                return dal.DeleteLeave(leaveId);
+            }
+            catch (Exception ex)
+            {
+                LogManager.logger.Error("LeaveBAL:- DeleteLeave", ex);
+                throw ex;
+            }
+        }
     }
 }

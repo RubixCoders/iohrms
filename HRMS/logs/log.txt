@@ -19,3 +19,31 @@ ERROR 2015-12-16 02:10:17,381 61041ms LogManager             GetLeaveList       
 System.InvalidOperationException: The result of a query cannot be enumerated more than once.
    at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 43
    at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 20
+ERROR 2015-12-16 05:12:10,172 9743557ms LogManager             GetLeaveList       - LeaveDAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 42
+ERROR 2015-12-16 05:12:10,247 9743632ms LogManager             GetLeaveList       - LeaveBAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 50
+   at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 27
+ERROR 2015-12-16 05:12:47,138 9780524ms LogManager             GetLeaveList       - LeaveDAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 42
+ERROR 2015-12-16 05:12:47,216 9780602ms LogManager             GetLeaveList       - LeaveBAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 50
+   at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 27
+ERROR 2015-12-16 05:14:23,668 9877054ms LogManager             GetLeaveList       - LeaveDAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 42
+ERROR 2015-12-16 05:14:23,709 9877095ms LogManager             GetLeaveList       - LeaveBAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 50
+   at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 27
+ERROR 2015-12-16 05:15:13,441 9926826ms LogManager             GetLeaveList       - LeaveDAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 42
+ERROR 2015-12-16 05:15:13,488 9926873ms LogManager             GetLeaveList       - LeaveBAL:- GetLeaveList
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 50
+   at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 27

@@ -243,6 +243,9 @@
     <Content Include="Views\Employee\Delete.cshtml" />
     <Content Include="Views\Leave\Index.cshtml" />
     <Content Include="Views\Leave\Create.cshtml" />
+    <Content Include="Views\Leave\Details.cshtml" />
+    <Content Include="Views\Leave\Edit.cshtml" />
+    <Content Include="Views\Leave\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
