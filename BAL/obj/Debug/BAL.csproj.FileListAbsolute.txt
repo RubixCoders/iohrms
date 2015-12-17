@@ -24,3 +24,18 @@ E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\BusinessEntities.dll
 E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\BusinessEntities.pdb
 E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\log4net.dll
 E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Debug\log4net.xml
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\BAL.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\BAL.pdb
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\BusinessEntities.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\Common.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\DAL.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\log4net.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\EntityFramework.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\BusinessEntities.pdb
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\Common.pdb
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\DAL.pdb
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\log4net.xml
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\bin\Debug\EntityFramework.xml
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\obj\Debug\BAL.dll
+C:\Users\Mayank\Documents\GitHub\iohrms\BAL\obj\Debug\BAL.pdb

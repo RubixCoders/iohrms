@@ -98,5 +98,31 @@ namespace BAL
                 throw;
             }
         }
+
+        #region Employee Create
+        /// CreatedBy:-Mayank
+        /// CreatedDate:-17-12-2015
+        /// <summary>
+        /// This method is used to create Employee
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns></returns>
+        public bool AddEmployee(EmployeeBE emp)
+        {
+
+            try
+            {
+                return dal.AddEmployee(emp);
+
+
+            }
+            catch (Exception ex)
+            {
+                LogManager.logger.Error("EmployeeBAL:-EmployeeBE", ex);
+                throw ex;
+
+            }
+        }
+        #endregion
     }
 }

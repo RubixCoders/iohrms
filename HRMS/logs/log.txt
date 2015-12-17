@@ -47,3 +47,15 @@ ERROR 2015-12-16 05:15:13,488 9926873ms LogManager             GetLeaveList     
 System.NullReferenceException: Object reference not set to an instance of an object.
    at DAL.Concrete.LeaveDAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\DAL\Concrete\LeaveDAL.cs:line 50
    at BAL.LeaveBAL.GetLeaveList(Int32 empId) in e:\Projects\Work Projects\HRMS\HRMS\BAL\LeaveBAL.cs:line 27
+ERROR 2015-12-17 13:17:51,541 207665ms LogManager             AddEmployee        - EmployeeController:-AddEmployee
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HRMS.Controllers.EmployeeController.RegisterEmployee(RegisterViewModel model, String fullName) in c:\Users\Mayank\Documents\GitHub\iohrms\HRMS\Controllers\EmployeeController.cs:line 208
+   at HRMS.Controllers.EmployeeController.AddEmployee(EmployeeBE emp) in c:\Users\Mayank\Documents\GitHub\iohrms\HRMS\Controllers\EmployeeController.cs:line 148
+ERROR 2015-12-17 13:25:48,838 67331ms LogManager             AddEmployee        - EmployeeController:-AddEmployee
+System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at HRMS.Controllers.EmployeeController.RegisterEmployee(RegisterViewModel model, String fullName) in c:\Users\Mayank\Documents\GitHub\iohrms\HRMS\Controllers\EmployeeController.cs:line 215
+   at HRMS.Controllers.EmployeeController.AddEmployee(EmployeeBE emp) in c:\Users\Mayank\Documents\GitHub\iohrms\HRMS\Controllers\EmployeeController.cs:line 148

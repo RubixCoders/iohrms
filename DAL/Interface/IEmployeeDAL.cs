@@ -51,5 +51,14 @@ namespace DAL.Interface
         /// <param name="empId"></param>
         /// <returns>boolStatus</returns>
         bool DeleteEmployee(int empId);
+
+        /// CreatedBy:-Mayank
+        /// CreatedDate:-17-12-2015
+        /// <summary>
+        /// This method is used to create Employee
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns></returns>
+        bool AddEmployee(EmployeeBE emp);
     }
 }

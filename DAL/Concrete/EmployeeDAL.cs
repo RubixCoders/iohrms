@@ -146,5 +146,35 @@ namespace DAL.Concrete
             }
         }
         #endregion
+
+        #region Employee Create
+        /// CreatedBy:-Mayank
+        /// CreatedDate:-17-12-2015
+        /// <summary>
+        /// This method is used to create Employee
+        /// </summary>
+        /// <param name="emp"></param>
+        /// <returns></returns>
+        public bool AddEmployee(EmployeeBE emp)
+        {
+
+            try
+            {
+                int status = db.sp_AddEmployee(emp.UserId, emp.EmpCode, emp.FirstName, emp.LastName, emp.Designation, emp.IsPermanent, emp.Salary, emp.EmpImage);
+                if (status > 0)
+                    return true;
+                else
+                    return false;
+
+                
+            }
+            catch(Exception ex)
+            {
+                LogManager.logger.Error("Employee:-AddEmployee", ex);
+                throw ex;
+
+            }
+        } 
+        #endregion
     }
 }
