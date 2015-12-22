@@ -32,6 +32,7 @@ namespace BusinessEntities
         public double? Salary { get; set; }
         
         public string EmpImage { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

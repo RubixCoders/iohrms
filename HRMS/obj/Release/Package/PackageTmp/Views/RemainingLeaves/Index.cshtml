@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BusinessEntities.RemainingLeavesBE>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Remaining Leaves</h2>
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Month)
+            @*@Html.DisplayName("Month")*@
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompOff)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Month)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompOff)
+        </td>
+    </tr>
+}
+
+</table>

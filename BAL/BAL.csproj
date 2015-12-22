@@ -46,6 +46,7 @@
     <Compile Include="EmployeeBAL.cs" />
     <Compile Include="LeaveBAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemainingLeavesBAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">

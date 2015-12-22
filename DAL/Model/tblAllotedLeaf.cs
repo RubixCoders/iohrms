@@ -15,9 +15,10 @@ namespace DAL.Model
     public partial class tblAllotedLeaf
     {
         public int Id { get; set; }
-        public Nullable<int> EmpId { get; set; }
+        public int EmpId { get; set; }
         public Nullable<int> CL { get; set; }
         public Nullable<int> PL { get; set; }
         public Nullable<int> CompOff { get; set; }
+        public int MonthId { get; set; }
     }
 }

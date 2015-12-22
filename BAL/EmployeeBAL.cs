@@ -79,6 +79,19 @@ namespace BAL
             }
         }
 
+        public EmployeeBE GetEmployeeDetailsByUserId(string userId)
+        {
+            try
+            {
+                return dal.GetEmployeeDetailsByUserId(userId);
+            }
+            catch (Exception ex)
+            {
+                LogManager.logger.Error("EmployeeBAL:- GetEmployeeDetailsByUserId", ex);
+                throw ex;
+            }
+        }
+
         /// Created By:- Surbhi Harsh
         /// Created On:- 15-12-2015
         /// <summary>
@@ -121,6 +134,20 @@ namespace BAL
                 LogManager.logger.Error("EmployeeBAL:-EmployeeBE", ex);
                 throw ex;
 
+            }
+        }
+        #endregion
+
+        #region Allot Leaves
+        public bool AllotLeaves(int empId) {
+            try
+            {
+                return dal.AllotLeaves(empId);
+            }
+            catch (Exception ex)
+            {
+                LogManager.logger.Error("EmployeeBAL:- AllotLeaves", ex);
+                throw ex;
             }
         }
         #endregion

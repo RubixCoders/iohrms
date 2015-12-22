@@ -71,7 +71,8 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="EmpId" Type="int" />
+          <Property Name="EmpId" Type="int" Nullable="false" />
+          <Property Name="MonthId" Type="int" Nullable="false" />
           <Property Name="CL" Type="int" />
           <Property Name="PL" Type="int" />
           <Property Name="CompOff" Type="int" />
@@ -174,13 +175,9 @@
           <Parameter Name="LeaveType" Type="varchar" Mode="In" />
           <Parameter Name="LeaveReason" Type="varchar(max)" Mode="In" />
         </Function>
-        <Function Name="sp_AllotedLeaves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Action" Type="varchar" Mode="In" />
-          <Parameter Name="Id" Type="int" Mode="In" />
+        <Function Name="sp_AllotLeaves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DateOfJoining" Type="date" Mode="In" />
           <Parameter Name="EmpId" Type="int" Mode="In" />
-          <Parameter Name="CL" Type="int" Mode="In" />
-          <Parameter Name="PL" Type="int" Mode="In" />
-          <Parameter Name="CompOff" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_DeleteEmployeeById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="EmpId" Type="int" Mode="In" />
@@ -201,11 +198,17 @@
         <Function Name="sp_GetEmployeeById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="EmpId" Type="int" Mode="In" />
         </Function>
+        <Function Name="sp_GetEmployeeByUserId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="sp_GetEmployeeList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="sp_GetLeaveDetailsByLeaveId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="LeaveId" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_GetLeaveListByEmpId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EmpId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_GetRemainingLeaves" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="EmpId" Type="int" Mode="In" />
         </Function>
         <Function Name="sp_LeaveDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -261,10 +264,11 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="EmpId" Type="Int32" />
+          <Property Name="EmpId" Type="Int32" Nullable="false" />
           <Property Name="CL" Type="Int32" />
           <Property Name="PL" Type="Int32" />
           <Property Name="CompOff" Type="Int32" />
+          <Property Name="MonthId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="tblEmployee">
           <Key>
@@ -386,6 +390,16 @@
             <Parameter Name="ToDate" Mode="In" Type="DateTime" />
             <Parameter Name="LeaveType" Mode="In" Type="String" />
             <Parameter Name="LeaveReason" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_AllotLeaves">
+            <Parameter Name="DateOfJoining" Mode="In" Type="DateTime" />
+            <Parameter Name="EmpId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_GetEmployeeByUserId" ReturnType="Collection(dbHRMSModel.sp_GetEmployeeByUserId_Result)">
+          <Parameter Name="UserID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_GetRemainingLeaves" ReturnType="Collection(dbHRMSModel.sp_GetRemainingLeaves_Result)">
+          <Parameter Name="EmpId" Mode="In" Type="Int32" />
           </FunctionImport>
         </EntityContainer>
         <EntityType Name="C__MigrationHistory">
@@ -554,6 +568,23 @@
           <Property Type="String" Name="LeaveType" Nullable="true" MaxLength="10" />
           <Property Type="String" Name="LeaveReason" Nullable="true" />
         </ComplexType>
+        <ComplexType Name="sp_GetEmployeeByUserId_Result">
+          <Property Type="Int32" Name="EmpId" Nullable="false" />
+          <Property Type="String" Name="UserId" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="EmpCode" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Designation" Nullable="false" MaxLength="50" />
+          <Property Type="Boolean" Name="IsPermanent" Nullable="false" />
+          <Property Type="Double" Name="Salary" Nullable="true" />
+          <Property Type="Binary" Name="EmpImage" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_GetRemainingLeaves_Result">
+          <Property Type="Int32" Name="MonthId" Nullable="false" />
+          <Property Type="Int32" Name="CL" Nullable="true" />
+          <Property Type="Int32" Name="PL" Nullable="true" />
+          <Property Type="Int32" Name="CompOff" Nullable="true" />
+          </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -563,6 +594,7 @@
           <EntitySetMapping Name="tblAllotedLeaves">
             <EntityTypeMapping TypeName="dbHRMSModel.tblAllotedLeaf">
               <MappingFragment StoreEntitySet="tblAllotedLeaves">
+                <ScalarProperty Name="MonthId" ColumnName="MonthId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="EmpId" ColumnName="EmpId" />
                 <ScalarProperty Name="CL" ColumnName="CL" />
@@ -661,17 +693,6 @@
               <ScalarProperty Name="Id" ColumnName="RoleId" />
             </EndProperty>
           </AssociationSetMapping>
-          <FunctionImportMapping FunctionImportName="sp_AllotedLeaves" FunctionName="dbHRMSModel.Store.sp_AllotedLeaves">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="dbHRMSModel.sp_AllotedLeaves_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
-                <ScalarProperty Name="CL" ColumnName="CL" />
-                <ScalarProperty Name="PL" ColumnName="PL" />
-                <ScalarProperty Name="CompOff" ColumnName="CompOff" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_LeaveDetails" FunctionName="dbHRMSModel.Store.sp_LeaveDetails">
             <ResultMapping>
               <ComplexTypeMapping TypeName="dbHRMSModel.sp_LeaveDetails_Result">
@@ -744,6 +765,32 @@
             </ResultMapping>
           </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="sp_UpdateLeaveDetails" FunctionName="dbHRMSModel.Store.sp_UpdateLeaveDetails" />
+          <FunctionImportMapping FunctionImportName="sp_AllotLeaves" FunctionName="dbHRMSModel.Store.sp_AllotLeaves" />
+          <FunctionImportMapping FunctionImportName="sp_GetEmployeeByUserId" FunctionName="dbHRMSModel.Store.sp_GetEmployeeByUserId">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="dbHRMSModel.sp_GetEmployeeByUserId_Result">
+                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="EmpCode" ColumnName="EmpCode" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="IsPermanent" ColumnName="IsPermanent" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="EmpImage" ColumnName="EmpImage" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_GetRemainingLeaves" FunctionName="dbHRMSModel.Store.sp_GetRemainingLeaves">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="dbHRMSModel.sp_GetRemainingLeaves_Result">
+                <ScalarProperty Name="MonthId" ColumnName="MonthId" />
+                <ScalarProperty Name="CL" ColumnName="CL" />
+                <ScalarProperty Name="PL" ColumnName="PL" />
+                <ScalarProperty Name="CompOff" ColumnName="CompOff" />
+                </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

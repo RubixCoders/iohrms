@@ -1,0 +1,15 @@
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\BAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\BAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\BusinessEntities.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\Common.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\DAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\log4net.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\EntityFramework.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\BusinessEntities.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\Common.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\DAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\log4net.xml
+E:\Projects\Work Projects\HRMS\HRMS\BAL\bin\Release\EntityFramework.xml
+E:\Projects\Work Projects\HRMS\HRMS\BAL\obj\Release\BAL.csprojResolveAssemblyReference.cache
+E:\Projects\Work Projects\HRMS\HRMS\BAL\obj\Release\BAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\BAL\obj\Release\BAL.pdb

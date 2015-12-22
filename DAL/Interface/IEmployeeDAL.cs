@@ -43,6 +43,8 @@ namespace DAL.Interface
         /// <returns>EmployeeBE</returns>
         EmployeeBE GetEmployeeDetails(int empId);
 
+        EmployeeBE GetEmployeeDetailsByUserId(string userId);
+
         /// Created By:- Surbhi Harsh
         /// Created On:- 15-12-2015
         /// <summary>
@@ -60,5 +62,7 @@ namespace DAL.Interface
         /// <param name="emp"></param>
         /// <returns></returns>
         bool AddEmployee(EmployeeBE emp);
+
+        bool AllotLeaves(int empId);
     }
 }

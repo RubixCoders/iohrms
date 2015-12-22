@@ -54,8 +54,10 @@
   <ItemGroup>
     <Compile Include="Concrete\EmployeeDAL.cs" />
     <Compile Include="Concrete\LeaveDAL.cs" />
+    <Compile Include="Concrete\RemainingLeavesDAL.cs" />
     <Compile Include="Interface\IEmployeeDAL.cs" />
     <Compile Include="Interface\ILeaveDAL.cs" />
+    <Compile Include="Interface\IRemainingLeavesDAL.cs" />
     <Compile Include="Model\AspNetRole.cs">
       <DependentUpon>HRMS.tt</DependentUpon>
     </Compile>
@@ -95,6 +97,9 @@
     <Compile Include="Model\sp_GetEmployeeById_Result.cs">
       <DependentUpon>HRMS.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\sp_GetEmployeeByUserId_Result.cs">
+      <DependentUpon>HRMS.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\sp_GetEmployeeList_Result.cs">
       <DependentUpon>HRMS.tt</DependentUpon>
     </Compile>
@@ -102,6 +107,9 @@
       <DependentUpon>HRMS.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\sp_GetLeaveListByEmpId_Result.cs">
+      <DependentUpon>HRMS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_GetRemainingLeaves_Result.cs">
       <DependentUpon>HRMS.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\sp_LeaveDetails_Result.cs">

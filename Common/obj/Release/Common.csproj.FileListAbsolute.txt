@@ -1,0 +1,7 @@
+E:\Projects\Work Projects\HRMS\HRMS\Common\bin\Release\Common.dll
+E:\Projects\Work Projects\HRMS\HRMS\Common\bin\Release\Common.pdb
+E:\Projects\Work Projects\HRMS\HRMS\Common\bin\Release\log4net.dll
+E:\Projects\Work Projects\HRMS\HRMS\Common\bin\Release\log4net.xml
+E:\Projects\Work Projects\HRMS\HRMS\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+E:\Projects\Work Projects\HRMS\HRMS\Common\obj\Release\Common.dll
+E:\Projects\Work Projects\HRMS\HRMS\Common\obj\Release\Common.pdb

@@ -152,6 +152,8 @@ namespace HRMS.Controllers
                         bool status = manager.AddEmployee(emp);
                         if (status)
                         {
+                            int empId = manager.GetEmployeeDetailsByUserId(userid).EmpId;
+                            bool boolStatus = manager.AllotLeaves(empId);
                             return Index();
                         }
                         else

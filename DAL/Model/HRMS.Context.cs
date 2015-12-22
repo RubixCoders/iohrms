@@ -297,5 +297,36 @@ namespace DAL.Model
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_UpdateLeaveDetails", leaveIdParameter, empIdParameter, fromDateParameter, toDateParameter, leaveTypeParameter, leaveReasonParameter);
         }
+    
+        public virtual int sp_AllotLeaves(Nullable<System.DateTime> dateOfJoining, Nullable<int> empId)
+        {
+            var dateOfJoiningParameter = dateOfJoining.HasValue ?
+                new ObjectParameter("DateOfJoining", dateOfJoining) :
+                new ObjectParameter("DateOfJoining", typeof(System.DateTime));
+    
+            var empIdParameter = empId.HasValue ?
+                new ObjectParameter("EmpId", empId) :
+                new ObjectParameter("EmpId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_AllotLeaves", dateOfJoiningParameter, empIdParameter);
+        }
+    
+        public virtual ObjectResult<sp_GetEmployeeByUserId_Result> sp_GetEmployeeByUserId(string userID)
+        {
+            var userIDParameter = userID != null ?
+                new ObjectParameter("UserID", userID) :
+                new ObjectParameter("UserID", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_GetEmployeeByUserId_Result>("sp_GetEmployeeByUserId", userIDParameter);
+        }
+    
+        public virtual ObjectResult<sp_GetRemainingLeaves_Result> sp_GetRemainingLeaves(Nullable<int> empId)
+        {
+            var empIdParameter = empId.HasValue ?
+                new ObjectParameter("EmpId", empId) :
+                new ObjectParameter("EmpId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_GetRemainingLeaves_Result>("sp_GetRemainingLeaves", empIdParameter);
+        }
     }
 }

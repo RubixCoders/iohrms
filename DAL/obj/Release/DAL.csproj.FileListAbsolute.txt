@@ -1,0 +1,16 @@
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\DAL.dll.config
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\DAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\DAL.pdb
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\BusinessEntities.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\Common.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\EntityFramework.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\EntityFramework.SqlServer.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\log4net.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\BusinessEntities.pdb
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\Common.pdb
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\EntityFramework.xml
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\EntityFramework.SqlServer.xml
+E:\Projects\Work Projects\HRMS\HRMS\DAL\bin\Release\log4net.xml
+E:\Projects\Work Projects\HRMS\HRMS\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+E:\Projects\Work Projects\HRMS\HRMS\DAL\obj\Release\DAL.dll
+E:\Projects\Work Projects\HRMS\HRMS\DAL\obj\Release\DAL.pdb

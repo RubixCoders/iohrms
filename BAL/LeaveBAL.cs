@@ -21,7 +21,8 @@ namespace BAL
         /// </summary>
         /// <param name="empId"></param>
         /// <returns>LeaveList</returns>
-        public LeaveListBE GetLeaveList(int empId) {
+        public LeaveListBE GetLeaveList(int empId)
+        {
             try
             {
                 return dal.GetLeaveList(empId);
@@ -40,7 +41,8 @@ namespace BAL
         /// </summary>
         /// <param name="leave"></param>
         /// <returns>boolStatus</returns>
-        public bool AddLeave(LeaveBE leave) {
+        public bool AddLeave(LeaveBE leave)
+        {
             try
             {
                 return dal.AddLeave(leave);
@@ -59,7 +61,8 @@ namespace BAL
         /// </summary>
         /// <param name="leaveId"></param>
         /// <returns>Leave</returns>
-        public LeaveBE GetLeaveDetails(int leaveId) {
+        public LeaveBE GetLeaveDetails(int leaveId)
+        {
             try
             {
                 return dal.GetLeaveDetails(leaveId);
@@ -78,7 +81,8 @@ namespace BAL
         /// </summary>
         /// <param name="leave"></param>
         /// <returns>boolStatus</returns>
-        public bool UpdateLeaveDetails(LeaveBE leave) {
+        public bool UpdateLeaveDetails(LeaveBE leave)
+        {
             try
             {
                 return dal.UpdateLeaveDetails(leave);
@@ -97,7 +101,8 @@ namespace BAL
         /// </summary>
         /// <param name="leaveId"></param>
         /// <returns></returns>
-        public bool DeleteLeave(int leaveId) {
+        public bool DeleteLeave(int leaveId)
+        {
             try
             {
                 return dal.DeleteLeave(leaveId);

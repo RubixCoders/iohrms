@@ -114,7 +114,8 @@ namespace DAL.Concrete
         /// </summary>
         /// <param name="leave"></param>
         /// <returns>boolStatus</returns>
-        public bool UpdateLeaveDetails(LeaveBE leave) {
+        public bool UpdateLeaveDetails(LeaveBE leave)
+        {
             try
             {
                 int status = db.sp_UpdateLeaveDetails(leave.LeaveId, leave.EmpId, leave.FromDate, leave.ToDate, leave.LeaveType, leave.LeaveReason);
@@ -137,7 +138,8 @@ namespace DAL.Concrete
         /// </summary>
         /// <param name="leaveId"></param>
         /// <returns></returns>
-        public bool DeleteLeave(int leaveId) {
+        public bool DeleteLeave(int leaveId)
+        {
             try
             {
                 int status = db.sp_DeleteLeaveDetails(leaveId);
